@@ -26,6 +26,17 @@ add assets folder
 >git push heroku master
 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+After modificatio in the code 
+you might wonder the gh pages
+you just need to run command 
+npm run deply
+package.json have its brach 
+and command exposed
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
