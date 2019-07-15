@@ -3,7 +3,7 @@
     {
       "id": 0,
       "name": "Uthappizza",
-      "image": "images/uthappizza.png",
+      "image": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/uthappizza.png",
       "category": "mains",
       "label": "Hot",
       "price": "4.99",
@@ -13,7 +13,7 @@
     {
       "id": 1,
       "name": "Zucchipakoda",
-      "image": "images/zucchipakoda.png",
+      "image": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/zucchipakoda.png",
       "category": "appetizer",
       "label": "",
       "price": "1.99",
@@ -23,7 +23,7 @@
     {
       "id": 2,
       "name": "Vadonut",
-      "image": "images/vadonut.png",
+      "image": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/vadonut.png",
       "category": "appetizer",
       "label": "New",
       "price": "1.99",
@@ -33,7 +33,7 @@
     {
       "id": 3,
       "name": "ElaiCheese Cake",
-      "image": "images/elaicheesecake.png",
+      "image": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/elaicheesecake.png",
       "category": "dessert",
       "label": "",
       "price": "2.99",
@@ -215,7 +215,7 @@
     {
       "id": 0,
       "name": "Weekend Grand Buffet",
-      "image": "images/buffet.png",
+      "image": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/buffet.png",
       "label": "New",
       "price": "19.99",
       "featured": true,
@@ -226,7 +226,7 @@
     {
       "id": 0,
       "name": "Peter Pan",
-      "image": "images/alberto.png",
+      "image": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/Ashish%20Kamble.jpg",
       "designation": "Chief Epicurious Officer",
       "abbr": "CEO",
       "featured": false,
@@ -235,7 +235,7 @@
     {
       "id": 1,
       "name": "Dhanasekaran Witherspoon",
-      "image": "images/alberto.png",
+      "image": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/Ashish%20Kamble.jpg",
       "designation": "Chief Food Officer",
       "abbr": "CFO",
       "featured": false,
@@ -244,7 +244,7 @@
     {
       "id": 2,
       "name": "Agumbe Tang",
-      "image": "images/alberto.png",
+      "image": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/Ashish%20Kamble.jpg",
       "designation": "Chief Taste Officer",
       "abbr": "CTO",
       "featured": false,
@@ -253,7 +253,7 @@
     {
       "id": 3,
       "name": "Alberto Somayya",
-      "image": "images/alberto.png",
+      "image": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/Ashish%20Kamble.jpg",
       "designation": "Executive Chef",
       "abbr": "EC",
       "featured": true,
