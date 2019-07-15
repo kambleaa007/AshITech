@@ -1,7 +1,10 @@
+NOW Backend is at json-server folder
+running of server is must
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 doTest>cd json-server
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 doTest\json-server>json-server --watch db.json -d 2000 -p 3001
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
