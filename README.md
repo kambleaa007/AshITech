@@ -1,3 +1,6 @@
+~~~This is Git Clone AshITech Repo~~~~~
+~~~You might need GitCloneJsonServer Repo
+
 NOW Backend is at json-server folder
 running of server is must
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -24,6 +27,20 @@ add assets folder
 >git add .
 >git commit -am "make it better"
 >git push heroku master
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+After Heroku server code updation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>heroku login
+>git pull
+>git add .
+>git commit -am "added"
+>git push heroku master
+
+
+
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
