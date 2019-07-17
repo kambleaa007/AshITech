@@ -277,7 +277,7 @@
     {
       "id": 0,
       "serviceName": "JavaScript",
-      "serviceImage": "images/JavaScript.png",
+      "serviceImage": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/Services/JavaScript.png",
       "serviceCategory": "Language",
       "serviceLabel": "Current market trends Hot",
       "serviceRating": "5",
@@ -285,9 +285,9 @@
       "serviceDescription": "JavaScript is a dynamic computer programming language. It is an interpreted programming language with object-oriented capabilities. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages."
     },
     {
-      "id": 2,
+      "id": 1,
       "serviceName": "ReactJS",
-      "serviceImage": "images/ReactJS.gif",
+      "serviceImage": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/Services/ReactJS.gif",
       "serviceCategory": "Language",
       "serviceLabel": "Current market trends Hot",
       "serviceRating": "5",
@@ -295,9 +295,9 @@
       "serviceDescription": " React is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time. Lots of people use React as the V in MVC."
     },
     {
-      "id": 3,
+      "id": 2,
       "serviceName": "AngularJS",
-      "serviceImage": "images/AngularJS.gif",
+      "serviceImage": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/Services/AngularJS.gif",
       "serviceCategory": "Language",
       "serviceLabel": "Current market trends Low",
       "serviceRating": "3",
@@ -305,9 +305,9 @@
       "serviceDescription": "AngularJS is a structural framework for dynamic web applications. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application components clearly and succinctly. Its data binding and dependency injection eliminate much of the code you currently have to write."
     },
     {
-      "id": 4,
+      "id": 3,
       "serviceName": "AspDotNetCore",
-      "serviceImage": "images/AspDotNetCore.png",
+      "serviceImage": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/Services/AspDotNetCore.png",
       "serviceCategory": "Language",
       "serviceLabel": "Current market trends High",
       "serviceRating": "3",
@@ -315,9 +315,9 @@
       "serviceDescription": "ASP.NET Core is a cross-platform, high-performance, open-source framework for building modern, cloud-based, Internet-connected applications. With ASP.NET Core, you can: Build web apps and services, IoT apps, and mobile backends."
     },
     {
-      "id": 5,
+      "id": 4,
       "serviceName": "DotNetCore",
-      "serviceImage": "images/DotNetCore.png",
+      "serviceImage": "https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/Services/DotNetCore.png",
       "serviceCategory": "Language",
       "serviceLabel": "Current market trends High",
       "serviceRating": "3",

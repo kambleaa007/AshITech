@@ -68,6 +68,13 @@ export default class Header extends Component {
                                         <span className="fa fa-address-card fa-lg"></span> Contact us
                                 </NavLink>
                                 </NavItem>
+
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/service">
+                                        <span className="fa fa-briefcase fa-lg"></span> Services
+                                </NavLink>
+                                </NavItem>
+
                             </Nav>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>

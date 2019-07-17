@@ -6,6 +6,7 @@ import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
+import Service from './service/ServiceComponent';
 
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -81,6 +82,7 @@ class Main extends Component {
                             <Route path="/menu/:dishId" component={DishWithId} />
                             <Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} postFeedback={this.props.postFeedback} />} />
                             <Route exact path="/aboutus" component={() => <About leaders={this.props.leaders} />} />
+                            <Route exact path="/service" component={() => <Service />} />
                             <Redirect to="/home" />
                         </Switch>
                     </CSSTransition>
