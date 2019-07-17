@@ -118,6 +118,8 @@ export const addComments = (comments) => ({
     payload: comments
 });
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PROMOS
+
 export const fetchPromos = () => (dispatch) => {
     dispatch(promosLoading(true));
 
@@ -156,6 +158,8 @@ export const addPromos = (promos) => ({
     type: ActionTypes.ADD_PROMOS,
     payload: promos
 });
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PROMOS
 
 export const fetchLeaders = () => (dispatch) => {
     dispatch(leadersLoading(true));
@@ -229,3 +233,48 @@ export const postFeedback = (feedback) => (dispatch) => {
             alert('Feedback could not be posted:\n' + error.message)
         })
 };
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SERVICE~~~~~~~~~~~~~~~~
+export const addService = (service) => ({
+    type: ActionTypes.ADD_SERVICE,
+    payload: service
+});
+
+export const addServices = (services) => ({
+    type: ActionTypes.ADD_SERVICES,
+    payload: services
+});
+
+export const fetchServices = () => (dispatch) => {
+    dispatch(servicesLoading(true));
+
+    return fetch(baseUrl + 'services')
+        .then(response => {
+            if (response.ok) {
+                return response;
+            } else {
+                var error = new Error('Error ' + response.status + ': ' + response.statusText);
+                error.response = response;
+
+                throw error;
+            }
+        },
+            error => {
+                var errorMessage = new Error(error.errorMessage);
+                throw errorMessage;
+            }
+        )
+
+        .then(response => response.json())
+        .then(services => dispatch(addServices(services)))
+        .catch(error => dispatch(promosFailed(error.message)))
+}
+
+export const servicesLoading = () => (dispatch) => ({
+    type: ActionTypes.SERVICES_LOADING
+});
+
+export const servicesFailed = (errmess) => ({
+    type: ActionTypes.SERVICES_FAILED,
+    payload: errmess
+});
