@@ -271,7 +271,7 @@ export const fetchServices = () => (dispatch) => {
 
         .then(response => response.json())
         .then(services => dispatch(addServices(services)))
-        .catch(error => dispatch(promosFailed(error.message)))
+        .catch(error => dispatch(servicesFailed(error.message)))
 }
 
 export const servicesLoading = () => (dispatch) => ({
@@ -310,10 +310,62 @@ export const postService = (service) => (dispatch) => {
             }
         )
         .then(response => response.json())
-        .then(response => dispatch(addComment(response)))
+        .then(response => dispatch(addService(response)))
         .catch(error => {
             console.log('Service feedback: ' + error.message);
             alert('Service could not be posted:\n' + error.message)
         })
 };
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SERVICE~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LOGIN~~~~~~~~~~~~~~~~~~
+
+export const loginLoading = () => (dispatch) => ({
+    type: ActionTypes.LOGIN_LOADING
+});
+
+export const loginFailed = (errmess) => ({
+    type: ActionTypes.LOGIN_FAILED,
+    payload: errmess
+});
+
+export const loginSuccess = (sucess) => ({
+    type: ActionTypes.LOGIN_SUCCESS,
+    payload: sucess
+})
+
+export const postLogin = (email, password) => (dispatch) => {
+    dispatch(loginLoading);
+
+    const newLogin = {
+        email: email,
+        password: password
+    };
+    
+    return fetch(baseUrl + 'auth/login', {
+        method: 'POST',
+        body: JSON.stringify(newLogin),
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        credentials: 'same-origin'
+    })
+        .then(response => {
+            if (response.ok) {
+                return response;
+            } else {
+                var error = new Error('Error ' + response.status + ': ' + response.statusText);
+                error.response = response;
+
+                throw error;
+            }
+        },
+            error => {
+                var errorMessage = new Error(error.errorMessage);
+                throw errorMessage;
+            }
+        )
+        .then(response => response.json())
+        .then(response => dispatch(loginSuccess(response.access_token)))
+        .catch(error => dispatch(loginFailed(error.message)))
+};

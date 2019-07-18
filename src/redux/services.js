@@ -1,6 +1,7 @@
 import * as ActionTypes from './actionTypes';
 
 export const Services = (state = {
+    isLoading: true,
     errMess: null,
     services: []
 }, action) => {
@@ -9,11 +10,11 @@ export const Services = (state = {
             return { ...state, isLoading: false, errMess: null, services: action.payload };
 
         case ActionTypes.SERVICES_FAILED:
-            return { ...state, isLoading: false, errMess: action.payload, comments: [] };
+            return { ...state, isLoading: false, errMess: action.payload, services: [] };
 
         case ActionTypes.ADD_SERVICE:
             var service = action.payload;
-            return { ...state, comments: state.comments.concat(service) };
+            return { ...state, services: state.services.concat(service) };
 
         case ActionTypes.SERVICES_LOADING:
                 return { ...state, isLoading: true, errMess: null, services: [] };
