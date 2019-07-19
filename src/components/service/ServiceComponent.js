@@ -4,6 +4,7 @@ import { fetchServices } from './../../redux/ActionCreators';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Row, Col, Grid } from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
 import { Loading } from './../LoadingComponent';
+import { ModalC } from './Modal';
 
 const mapStateToProps = state => {
     return {
@@ -35,6 +36,7 @@ class Service extends Component{
         return(
             <div className="container">
                 <div >services works</div>
+                <ModalC buttonLabel = "Window Click" className="modal-90w"/>
                 <Row>{ service }</Row>
             </div>
         );
@@ -54,7 +56,7 @@ function RenderService({service, isLoading, errMess}){
         return(
             <div>
                 <FadeTransform in transformProps={{
-                exitTransform: 'scale(0.5) translateY(-50%)'
+                exitTransform: 'scale(0.5) translateY(-150%) '
             }}>           
 
             {
@@ -75,6 +77,7 @@ function RenderService({service, isLoading, errMess}){
             }                    
                 
             </FadeTransform>
+            
             </div>
         )
     }
@@ -83,3 +86,7 @@ function RenderService({service, isLoading, errMess}){
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(Service);    
+
+
+
+
