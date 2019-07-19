@@ -56,7 +56,7 @@ function RenderService({service, isLoading, errMess}){
             service != null &&
             <Card>
                 {service.id}
-                <CardImg src={service.serviceImage} alt={service.serviceName} />
+                <CardImg top width="100%" src={service.serviceImage} alt={service.serviceName} />
                 <CardBody>
                     <CardTitle>{service.serviceName}</CardTitle>
                     {service.serviceCategory ? <CardSubtitle>{service.serviceCategory}</CardSubtitle> : null}
