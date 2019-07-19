@@ -54,6 +54,27 @@ and command exposed
 
 
 
+~~~~~~~~GitHub Pages gh-pages branch~~~
+
+1) need to add `homepage` in `package.json`
+e.g. "homepage": "link-to-your-repository"
+our case it is 
+"homepage": "https://kambleaa007.github.io/AshITech"
+
+2) need predeploy and deploy inside scripts of package.json
+
+"predeploy": "yarn run build",
+"deploy": "gh-pages -d build",
+
+3) on terminal run
+npm run deploy
+yarn run deploy
+
+this is gonna pushes your built file to `gh-pages` branch on your remote repo
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
