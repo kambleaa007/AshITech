@@ -1,7 +1,7 @@
 import React, { Component }  from 'react';
 import { connect } from 'react-redux';
 import { fetchServices } from './../../redux/ActionCreators';
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Row, Col, Grid } from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
 import { Loading } from './../LoadingComponent';
 
@@ -22,15 +22,20 @@ class Service extends Component{
     }
 
     render(){
+        
+        const service = this.props.services.services.map((i)=>{
+            return(                
+            <Col sm="3">                        
+                <RenderService service={i} isLoading={this.props.services.isLoading} errMess={this.props.services.errMess} />
+            </Col>   
+            );                    
+        });        
+        
+        
         return(
             <div className="container">
-                <div>works</div>
-                <div>{
-                    this.props.services.services.map((i)=>{
-                        return(<div><RenderService service={i} isLoading={this.props.services.isLoading} errMess={this.props.services.errMess} /></div>);
-                    })
-                
-                }</div>
+                <div >services works</div>
+                <Row>{ service }</Row>
             </div>
         );
     }
@@ -53,20 +58,21 @@ function RenderService({service, isLoading, errMess}){
             }}>           
 
             {
-            service != null &&
-            <Card>
-                {service.id}
-                <CardImg top width="100%" src={service.serviceImage} alt={service.serviceName} />
-                <CardBody>
-                    <CardTitle>{service.serviceName}</CardTitle>
-                    {service.serviceCategory ? <CardSubtitle>{service.serviceCategory}</CardSubtitle> : null}
-                    {service.serviceLabel ? <CardSubtitle>{service.serviceLabel}</CardSubtitle> : null}
-                    {service.serviceRating ? <CardSubtitle>{service.serviceRating}</CardSubtitle> : null}
-                    <CardText>{service.serviceDescription}</CardText>
-                </CardBody>
-            </Card>                
-            }
-                    
+            service != null &&   
+                   
+                <Card body outline color="secondary">
+                    <p>Service Number: </p>{service.id}
+                    <CardImg width="100px" src={service.serviceImage} alt={service.serviceName} />
+                    <CardBody>
+                        Service Name: <CardTitle>{service.serviceName}</CardTitle>
+                        Service Category: {service.serviceCategory ? <CardSubtitle>{service.serviceCategory}</CardSubtitle> : null}
+                        Service Label: {service.serviceLabel ? <CardSubtitle>{service.serviceLabel}</CardSubtitle> : null}
+                        Service Rating: {service.serviceRating ? <CardSubtitle>{service.serviceRating}</CardSubtitle> : null}
+                        Service Description: <CardText>{service.serviceDescription}</CardText>
+                    </CardBody>
+                </Card> 
+                                   
+            }                    
                 
             </FadeTransform>
             </div>
