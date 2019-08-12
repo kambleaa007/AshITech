@@ -1,4 +1,6 @@
-~~~This is Git Clone AshITech Repo~~~~~
+
+#This is Git Clone AshITech Repo
+
 ~~~You might need GitCloneJsonServer Repo
 
 NOW Backend is at json-server folder
@@ -14,15 +16,15 @@ doTest\json-server>json-server --watch db.json -d 2000 -p 3001
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Heroku work
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-`
+~~~~~
 open git check for json-server-heroku
 clone it
 cd into it
 change db.json
 keep package.json 
 add assets folder
-`
-`
+
+
 >heroku login
 >heroku create jsonserverashitech
 >git init
@@ -30,7 +32,7 @@ add assets folder
 >git add .
 >git commit -am "make it better"
 >git push heroku master
-`
+~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 After Heroku server code updation
