@@ -1,5 +1,7 @@
 ## Live at https://kambleaa007.github.io/AshITech/index
 
+### Warning As it is Educational purposes {No TypeScript is used}
+
 #This is Git Clone AshITech Repo
 
 ~~~You might need GitCloneJsonServer Repo
