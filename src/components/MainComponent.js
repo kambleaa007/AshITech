@@ -7,10 +7,11 @@ import Home from './HomeComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
 import Service from './service/ServiceComponent';
+import { ServiceDet } from './service/ServiceDetails'
 
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { Switch, Route, Redirect, withRouter, BrowserRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { postComment, fetchDishes, fetchComments, fetchPromos, fetchLeaders, postFeedback } from '../redux/ActionCreators';
+import { postComment, fetchDishes, fetchComments, fetchPromos, fetchLeaders, postFeedback, fetchServices } from '../redux/ActionCreators';
 import { actions } from 'react-redux-form';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
@@ -19,7 +20,8 @@ const mapStateToProps = state => {
         dishes: state.dishes,
         comments: state.comments,
         promotions: state.promotions,
-        leaders: state.leaders
+        leaders: state.leaders,
+        services: state.services
     };
 };
 
@@ -30,7 +32,8 @@ const mapDispatchToProps = (dispatch) => ({
     fetchPromos: () => { dispatch(fetchPromos()) },
     fetchComments: () => { dispatch(fetchComments()) },
     fetchLeaders: () => { dispatch(fetchLeaders()) },
-    postFeedback: (feedback) => dispatch(postFeedback(feedback))
+    postFeedback: (feedback) => dispatch(postFeedback(feedback)),
+    fetchServices: () => { dispatch(fetchServices()) }   
 });
 
 class Main extends Component {
@@ -40,6 +43,7 @@ class Main extends Component {
         this.props.fetchComments();
         this.props.fetchPromos();
         this.props.fetchLeaders();
+        this.props.fetchServices();
     }
 
     render() {
@@ -76,6 +80,7 @@ class Main extends Component {
                 <Header />
                 <TransitionGroup>
                     <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
+                        <BrowserRouter  >
                         <Switch>
                             <Route path="/home" component={HomePage} />
                             <Route exact path="/menu" component={() => <Menu dishes={this.props.dishes} />} />
@@ -83,8 +88,13 @@ class Main extends Component {
                             <Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} postFeedback={this.props.postFeedback} />} />
                             <Route exact path="/aboutus" component={() => <About leaders={this.props.leaders} />} />
                             <Route exact path="/service" component={() => <Service />} />
+
+                            <Route exact path="/service/:serviceId" component={()=><ServiceDet services={ this.props.services } {...this.props} />} />
+                            <Route exact path="/service/inService" component={()=>{<div>Loaded in Service !!!</div>}} />
+                            
                             <Redirect to="/home" />
                         </Switch>
+                        </BrowserRouter>
                     </CSSTransition>
                 </TransitionGroup>
                 <Footer />
