@@ -146,6 +146,4 @@ export const ServiceDet = props => {
 }
 
 
-
-
 export default ServiceDet;

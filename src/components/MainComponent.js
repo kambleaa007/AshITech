@@ -98,7 +98,7 @@ class Main extends Component {
                             <Route exact path="/menu" component={() => <Menu dishes={this.props.dishes} />} />
                             <Route path="/menu/:dishId" component={DishWithId} />
                             <Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} postFeedback={this.props.postFeedback} />} />
-                            <Route exact path="/aboutus" component={<About leaders={this.props.leaders} />} />
+                            <Route exact path="/aboutus" component={() => <About leaders={this.props.leaders} />} />
                             <Route exact path="/service" component={() => <Service />} />
 
                             <Route exact path="/service/:serviceId" component={ ServiceWithId } />

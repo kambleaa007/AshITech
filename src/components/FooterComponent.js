@@ -21,7 +21,7 @@ function Footer(props) {
                 <div className="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-		              Cybercity Tower 15<br />
+		              Crystal Water Cool Bay Road<br />
 		              AshITechnologies<br />
 		              Pune<br />
 		              <i className="fa fa-phone fa-lg"></i>:  +91 7387441088<br />
