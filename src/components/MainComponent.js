@@ -75,6 +75,18 @@ class Main extends Component {
             );
         }
 
+        const ServiceWithId = ({ match }) => {
+            return(
+                <ServiceDet
+                    service={this.props.services.services.filter(s => s.id === parseInt(match.params.serviceId, 10))[0] }
+                    isLoading={this.props.services.isLoading}
+                    errMess={this.props.services.errMess}
+                    id={parseInt(match.params.serviceId, 10)}
+                    services={this.props.services.services}
+                />
+            );
+        }
+
         return (
             <div>
                 <Header />
@@ -86,10 +98,10 @@ class Main extends Component {
                             <Route exact path="/menu" component={() => <Menu dishes={this.props.dishes} />} />
                             <Route path="/menu/:dishId" component={DishWithId} />
                             <Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} postFeedback={this.props.postFeedback} />} />
-                            <Route exact path="/aboutus" component={() => <About leaders={this.props.leaders} />} />
+                            <Route exact path="/aboutus" component={<About leaders={this.props.leaders} />} />
                             <Route exact path="/service" component={() => <Service />} />
 
-                            <Route exact path="/service/:serviceId" component={()=><ServiceDet services={ this.props.services } {...this.props} />} />
+                            <Route exact path="/service/:serviceId" component={ ServiceWithId } />
                             <Route exact path="/service/inService" component={()=>{<div>Loaded in Service !!!</div>}} />
                             
                             <Redirect to="/home" />

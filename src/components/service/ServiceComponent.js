@@ -21,7 +21,7 @@ const mapDispatchToProps = (dispatch) => ({
 
 
 
-class Service extends Component{
+export class Service extends Component{
 
     componentDidMount(){
         //this.props.fetchServices();
@@ -47,7 +47,10 @@ class Service extends Component{
                     {/* 
                     <Route path={`${this.props.match.path}/:serviceId`} component={()=><ServiceDet services={ this.props.services } />} />
                     <Route path={`${this.props.match.path}/inService`} component={()=><div>Loaded in Service !!!</div>} /> 
+                    <Route path={`${this.props.match.path}/:serviceId`} component={()=><ServiceDet services={ this.props.services } />} /> 
                     */}
+
+                   
                     
             </div>
         );
