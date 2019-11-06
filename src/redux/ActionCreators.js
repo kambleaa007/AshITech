@@ -334,12 +334,12 @@ export const loginSuccess = (sucess) => ({
     payload: sucess
 })
 
-export const postLogin = (email, password) => (dispatch) => {
+export const postLogin = (userName, passWord) => (dispatch) => {
     dispatch(loginLoading);
 
     const newLogin = {
-        email: email,
-        password: password
+        userName: userName,
+        passWord: passWord
     };
     
     return fetch(baseUrl + 'auth/login', {
@@ -369,3 +369,34 @@ export const postLogin = (email, password) => (dispatch) => {
         .then(response => dispatch(loginSuccess(response.access_token)))
         .catch(error => dispatch(loginFailed(error.message)))
 };
+
+
+export const addLogins = (logins) => ({
+    type: ActionTypes.ADD_LOGINS,
+    payload: logins
+});
+
+export const fetchLogin = () => (dispatch) => {
+    dispatch(loginLoading);
+
+    return fetch(baseUrl + 'auth')
+        .then(response => {
+            if (response.ok) {
+                return response;
+            } else {
+                var error = new Error('Error ' + response.status + ': ' + response.statusText);
+                error.response = response;
+
+                throw error;
+            }
+        },
+            error => {
+                var errorMessage = new Error(error.errorMessage);
+                throw errorMessage;
+            }
+        )
+
+        .then(response => response.json())
+        .then(logins => dispatch(addLogins(logins)))
+        .catch(error => dispatch(loginFailed(error.message)))
+}

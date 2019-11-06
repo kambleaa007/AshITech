@@ -12,10 +12,14 @@ export const Login = (state = {
             return { ...state, isLoading: false, errMess: action.payload, logins: [] };
 
         case ActionTypes.LOGIN_LOADING:
-                return { ...state, isLoading: true, errMess: null, logins: [] };
+            return { ...state, isLoading: true, errMess: null, logins: [] };
 
         case ActionTypes.LOGIN_SUCCESS:
-            return { ...state, isLoading: false, errMess: null, successMess: action.payload}        
+            return { ...state, isLoading: false, errMess: null, successMess: action.payload};
+            
+        case ActionTypes.ADD_LOGINS:
+            return { ...state, isLoading: false, errMess: null, logins: action.payload };
+            
         default:
             return state;
     }

@@ -102,7 +102,7 @@ class Main extends Component {
                             <Route exact path="/service" component={() => <Service />} />
 
                             <Route exact path="/service/:serviceId" component={ ServiceWithId } />
-                            <Route exact path="/service/inService" component={()=>{<div>Loaded in Service !!!</div>}} />
+                            <Route exact path="/service/inService" component={()=><div>Loaded in Service !!!</div>} />
                             
                             <Redirect to="/home" />
                         </Switch>

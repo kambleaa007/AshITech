@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, NavItem, Collapse, Jumbotron, Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import { postLogin } from './../redux/ActionCreators';
+import { postLogin, fetchLogin } from './../redux/ActionCreators';
 
 import { connect } from 'react-redux';
 import { LOGIN_SUCCESS } from '../redux/actionTypes';
@@ -10,12 +10,14 @@ import { Loading } from './LoadingComponent';
 
 const mapStateToProps = state => {
     return {        
-        login: state.login
+        login: state.login,
+        logins: state.logins
     };
 };
 
 const mapDispatchToProps = (dispatch) => ({    
-    postLogin: (email, password) => { dispatch(postLogin(email, password)) }    
+    postLogin: (email, password) => { dispatch(postLogin(email, password)) },
+    fetchLogin: () => { dispatch(fetchLogin()) }   
 });
 
 class Header extends Component {
@@ -35,6 +37,9 @@ class Header extends Component {
     }
 
     componentDidMount(){
+
+        this.props.fetchLogin();    
+
         if(this.props.login.successMess != null){
             localStorage.setItem('token',this.props.login.successMess);
             alert(localStorage.getItem('token'));
@@ -54,7 +59,11 @@ class Header extends Component {
 
         this.props.postLogin(this.username.value, this.password.value);        
         
-        
+        //let isLogin = false;
+
+        const l = this.props.logins.filter(l => l.userName===this.username.value && l.passWord===this.password.value )[0];
+        this.setState({loginMsg: l});
+
         // alert(this.username.value + " " + this.password.value + " sucess: "+ this.props.login.isLoading + " fail: "+ this.props.login.errMess);
 
         evt.preventDefault();
@@ -151,8 +160,9 @@ class Header extends Component {
                                     </Label>
                                 </FormGroup>
                                 <Button type="submit" value="submit" color="primary">Login</Button>
-                                {this.props.login.errMess != null && <p key="1">{this.props.login.errMess}</p>}
-                                {this.props.login.successMess != null && <p key="2">{this.props.login.successMess}</p>}
+                                {this.props.login.errMess != null && <p key="1">Error Message{this.props.login.errMess}</p>}
+                                {this.props.login.successMess != null && <p key="2">Success Message{this.props.login.successMess}</p>}
+                                {this.props.loginMsg && <p key="3">{this.props.loginMsg}</p>}
                             </Form>                   
                         }                        
                     </ModalBody>
