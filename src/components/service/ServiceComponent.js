@@ -1,13 +1,14 @@
 import React, { Component }  from 'react';
 import { connect } from 'react-redux';
 import { fetchServices } from './../../redux/ActionCreators';
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Row, Col, Grid } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Row, Col, Grid, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link, Switch, Route } from 'react-router-dom';
 import { FadeTransform } from 'react-animation-components';
 import { Loading } from './../LoadingComponent';
 import { ModalC } from './Modal';
 import { ServiceDet } from './ServiceDetails';
 import { RenderService } from './RenderService';
+
 
 const mapStateToProps = state => {
     return {
@@ -40,8 +41,23 @@ export class Service extends Component{
         
         return(
             <div className="container">
-                <div >services works</div>
-                <ModalC buttonLabel = "Window Click" className="modal-90w"/>
+                <div className="row">
+                    <Breadcrumb>
+                        <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+                        <BreadcrumbItem active>Service</BreadcrumbItem>
+                    </Breadcrumb>
+
+                    {/* 
+                        <div >services works</div>                    
+                    */}
+                    <Col></Col>
+                    <Col></Col>
+                    <Col></Col>
+
+                    <ModalC buttonLabel = "Window Click" className="modal-90w"/>
+
+                </div>
+                
                 <Row>{ service }</Row>
 
                     {/* 
