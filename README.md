@@ -2,6 +2,9 @@
 
 ### Warning As it is Educational purposes {No TypeScript is used}
 
+# npm i
+# node start
+
 #This is Git Clone AshITech Repo
 
 ~~~You might need GitCloneJsonServer Repo
