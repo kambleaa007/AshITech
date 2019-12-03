@@ -2,12 +2,12 @@
 
 ### Warning As it is Educational purposes {No TypeScript is used}
 
-# npm i
-# node start
+npm i
+node start
 
 #This is Git Clone AshITech Repo
 
-~~~You might need GitCloneJsonServer Repo
+You might need GitCloneJsonServer Repo
 
 NOW Backend is at json-server folder
 running of server is must
@@ -104,10 +104,41 @@ steps:
 
 
 
+# Git Learnings
 
+git clone
+git add .
+git add *
 
+git commit -m "MESSAGE_STRING_HERE"
+git push
 
+git pull
 
+git checkout -b BRANCH_NAME
+-- create and switch to branch
+git checkout BRANCH_NAME
+-- switch to branch
+
+git status
+git pull
+git add .
+git push --set-upstream origin BRANCH_NAME
+-- Need, for first commit only
+git push
+-- Works, for next commits 
+
+git checkout master
+-- switch back to master 
+git merge BRANCH_NAME
+-- on master merge your branch now
+-- now commits will be on master too
+
+git branch -d BRANCH_NAME
+-- delete branch locally only not on github
+
+git push origin --delete BRANCH_NAME
+-- delete branch on remote
 
 
 
