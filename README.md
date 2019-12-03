@@ -2,8 +2,12 @@
 
 ### Warning As it is Educational purposes {No TypeScript is used}
 
-npm i
-node start
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git clone https://github.com/kambleaa007/AshITech.git   
+npm i   
+node start  
+Just That Only
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #This is Git Clone AshITech Repo
 
@@ -12,24 +16,23 @@ You might need GitCloneJsonServer Repo
 NOW Backend is at json-server folder
 running of server is must
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-`
+
 doTest>cd json-server
-`
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 doTest\json-server>json-server --watch db.json -d 2000 -p 3001
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+# Heroku learnings work
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Heroku work
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~
+//////////////
 open git check for json-server-heroku
 clone it
 cd into it
 change db.json
 keep package.json 
 add assets folder
-
+//////////////
 
 >heroku login
 >heroku create jsonserverashitech
@@ -38,33 +41,26 @@ add assets folder
 >git add .
 >git commit -am "make it better"
 >git push heroku master
-~~~~~
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 After Heroku server code updation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+//////////////
 >heroku login
 >git pull
 >git add .
 >git commit -am "added"
 >git push heroku master
-
-
-
-
-
+//////////////
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-After modificatio in the code 
+After modification in the code 
 you might wonder the gh pages
 you just need to run command 
 npm run deply
 package.json have its brach 
 and command exposed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
 ~~~~~~~~GitHub Pages gh-pages branch~~~
 
 1) need to add `homepage` in `package.json`
