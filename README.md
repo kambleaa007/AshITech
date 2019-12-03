@@ -87,6 +87,31 @@ this is gonna pushes your built file to `gh-pages` branch on your remote repo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+# CircleCI
+
+create folder .circleci
+add config.yml file
+add content
+
+version: 2
+jobs:
+build:
+docker:
+- image: circleci/ruby:2.4.1
+steps:
+- checkout
+- run: echo "A first hello"
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
