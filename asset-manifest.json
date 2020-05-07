@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/AshITech/static/css/main.58521172.chunk.css",
-    "main.js": "/AshITech/static/js/main.a97b72ec.chunk.js",
-    "main.js.map": "/AshITech/static/js/main.a97b72ec.chunk.js.map",
+    "main.css": "/AshITech/static/css/main.111dfa07.chunk.css",
+    "main.js": "/AshITech/static/js/main.37701ab5.chunk.js",
+    "main.js.map": "/AshITech/static/js/main.37701ab5.chunk.js.map",
     "runtime~main.js": "/AshITech/static/js/runtime~main.b3a006ee.js",
     "runtime~main.js.map": "/AshITech/static/js/runtime~main.b3a006ee.js.map",
     "static/css/2.66f801d2.chunk.css": "/AshITech/static/css/2.66f801d2.chunk.css",
     "static/js/2.3f57754c.chunk.js": "/AshITech/static/js/2.3f57754c.chunk.js",
     "static/js/2.3f57754c.chunk.js.map": "/AshITech/static/js/2.3f57754c.chunk.js.map",
     "index.html": "/AshITech/index.html",
-    "precache-manifest.0f9be9ca259100f8057b1c3a5da5834c.js": "/AshITech/precache-manifest.0f9be9ca259100f8057b1c3a5da5834c.js",
+    "precache-manifest.d6d3919e9a738cb220f60576c1979652.js": "/AshITech/precache-manifest.d6d3919e9a738cb220f60576c1979652.js",
     "service-worker.js": "/AshITech/service-worker.js",
     "static/css/2.66f801d2.chunk.css.map": "/AshITech/static/css/2.66f801d2.chunk.css.map",
-    "static/css/main.58521172.chunk.css.map": "/AshITech/static/css/main.58521172.chunk.css.map",
+    "static/css/main.111dfa07.chunk.css.map": "/AshITech/static/css/main.111dfa07.chunk.css.map",
     "static/media/mdb.css": "/AshITech/static/media/arrow_right.8ef6a08c.svg",
     "static/media/font-awesome.min.css": "/AshITech/static/media/fontawesome-webfont.fee66e71.woff"
   }
