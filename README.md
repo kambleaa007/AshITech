@@ -2,12 +2,12 @@
 
 ### Warning As it is Educational purposes {No TypeScript is used}
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-git clone https://github.com/kambleaa007/AshITech.git   
-npm i   
-node start  
+```
+git clone https://github.com/kambleaa007/AshITech.git
+npm i
+node start
 Just That Only
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
 #This is Git Clone AshITech Repo
 
@@ -15,72 +15,98 @@ You might need GitCloneJsonServer Repo
 
 NOW Backend is at json-server folder
 running of server is must
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+```
 
 doTest>cd json-server
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+
 doTest\json-server>json-server --watch db.json -d 2000 -p 3001
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+```
 
 # Heroku learnings work
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+
 //////////////
 open git check for json-server-heroku
 clone it
 cd into it
 change db.json
-keep package.json 
+keep package.json
 add assets folder
 //////////////
 
->heroku login
->heroku create jsonserverashitech
->git init
->heroku git:remote -a jsonserverashitech
->git add .
->git commit -am "make it better"
->git push heroku master
+> heroku login
+> heroku create jsonserverashitech
+> git init
+> heroku git:remote -a jsonserverashitech
+> git add .
+> git commit -am "make it better"
+> git push heroku master
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 After Heroku server code updation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+
 //////////////
->heroku login
->git pull
->git add .
->git commit -am "added"
->git push heroku master
-//////////////
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-After modification in the code 
+
+> heroku login
+> git pull
+> git add .
+> git commit -am "added"
+> git push heroku master
+> //////////////
+
+```
+After modification in the code
 you might wonder the gh pages
-you just need to run command 
+you just need to run command
 npm run deply
-package.json have its brach 
+package.json have its brach
 and command exposed
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
+
+#### Now use json server auth
+
+> npm install -D json-server-auth
+
+Create a db.json file with a users collection :
+
+{
+"users": []
+}
+
+json-server db.json -m ./node_modules/json-server-auth
+==>with json-server installed globally and json-server-auth installed locally
+
+json-server-auth db.json
+==>with json-server-auth installed globally
+
+to run, if not installed -> npm install -g json-server
+now run,
+npx json-server --watch db.json
+
 ~~~~~~~~GitHub Pages gh-pages branch~~~
 
-1) need to add `homepage` in `package.json`
-e.g. "homepage": "link-to-your-repository"
-our case it is 
-"homepage": "https://kambleaa007.github.io/AshITech"
+1. need to add `homepage` in `package.json`
+   e.g. "homepage": "link-to-your-repository"
+   our case it is
+   "homepage": "https://kambleaa007.github.io/AshITech"
 
-2) need predeploy and deploy inside scripts of package.json
+2. need predeploy and deploy inside scripts of package.json
 
 "predeploy": "yarn run build",
 "deploy": "gh-pages -d build",
 
-3) on terminal run
-npm run deploy
-yarn run deploy
+3. on terminal run
+   npm run deploy
+   yarn run deploy
 
 this is gonna pushes your built file to `gh-pages` branch on your remote repo
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+````
 
 
 # CircleCI
@@ -122,10 +148,10 @@ git add .
 git push --set-upstream origin BRANCH_NAME
 -- Need, for first commit only
 git push
--- Works, for next commits 
+-- Works, for next commits
 
 git checkout master
--- switch back to master 
+-- switch back to master
 git merge BRANCH_NAME
 -- on master merge your branch now
 -- now commits will be on master too
@@ -441,7 +467,7 @@ In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and s
 
 Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
 
-The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
+The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine.
 
 ## Formatting Code Automatically
 
@@ -1816,7 +1842,7 @@ Use the following [`launch.json`](https://code.visualstudio.com/docs/editor/debu
       "name": "Debug CRA Tests",
       "type": "node",
       "request": "launch",
-      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/react-scripts",      
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/react-scripts",
       "args": [
         "test",
         "--runInBand",
@@ -2130,7 +2156,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
@@ -2570,7 +2596,7 @@ To resolve this:
 1. Open an issue on the dependency's issue tracker and ask that the package be published pre-compiled.
   * Note: Create React App can consume both CommonJS and ES modules. For Node.js compatibility, it is recommended that the main entry point is CommonJS. However, they can optionally provide an ES module entry point with the `module` field in `package.json`. Note that **even if a library provides an ES Modules version, it should still precompile other ES6 features to ES5 if it intends to support older browsers**.
 
-2. Fork the package and publish a corrected version yourself. 
+2. Fork the package and publish a corrected version yourself.
 
 3. If the dependency is small enough, copy it to your `src/` folder and treat it as application code.
 
@@ -2583,3 +2609,4 @@ In the future, we might start automatically compiling incompatible third-party m
 ## Something Missing?
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+````
