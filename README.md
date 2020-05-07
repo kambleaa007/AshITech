@@ -70,6 +70,23 @@ and command exposed
 
 #### Now use json server auth
 
+new apis added are,
+
+https://jsonserverashitech.herokuapp.com/login
+
+https://jsonserverashitech.herokuapp.com/register
+
+GET-
+https://jsonserverashitech.herokuapp.com/users
+
+POST-
+https://jsonserverashitech.herokuapp.com/users
+BODY- JSON
+{
+"email": "XYZ@XYZ.com",
+"password": ""
+}
+
 > npm install -D json-server-auth
 
 Create a db.json file with a users collection :
@@ -77,6 +94,11 @@ Create a db.json file with a users collection :
 {
 "users": []
 }
+
+then register users,
+try login,
+take access tokens,
+store as cookie or add header "Authorization =xuhnkmkl"
 
 json-server db.json -m ./node_modules/json-server-auth
 ==>with json-server installed globally and json-server-auth installed locally
