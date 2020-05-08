@@ -49,12 +49,12 @@ visit http://localhost:4200/
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/logo.png" alt="logo" height="200" width="200"></br>
-  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/1.JPG" alt="logo" height="200" width="500"></br>
-  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/2.JPG" alt="logo" height="200" width="500"></br>
-  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/3.JPG" alt="logo" height="200" width="500"></br>
-  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/4.JPG" alt="logo" height="200" width="500"></br>
-  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/5.JPG" alt="logo" height="200" width="500">
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/logo.png" alt="logo" height="100" width="100"></br>
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/1.JPG" alt="logo" height="100" width="200"></br>
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/2.JPG" alt="logo" height="100" width="200"></br>
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/3.JPG" alt="logo" height="100" width="200"></br>
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/4.JPG" alt="logo" height="100" width="200"></br>
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/5.JPG" alt="logo" height="100" width="200">
 </p>
 
 ## Running the tests
