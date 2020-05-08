@@ -18,7 +18,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
 node [![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
 npm [![NPM License](https://img.shields.io/npm/l/all-contributors.svg?style=flat)](https://github.com/tterb/hyde/blob/master/LICENSE)
 CLI
@@ -26,8 +25,6 @@ heroku CLI, account
 windows cmd powershell, linux terminal, mac terminal
 chrome or any browser with react redux DevTools addOns plugins
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
-
-```
 
 ### Installing
 
@@ -113,24 +110,22 @@ NOW Backend is at json-server folder
 running of server is must
 
 ```
-
 doTest>cd json-server
-
-```
-
 doTest\json-server>json-server --watch db.json -d 2000 -p 3001
+```
 
 #### Heroku learnings work
 
-//////////////
+```
 open git check for json-server-heroku
 clone it
 cd into it
 change db.json
 keep package.json
 add assets folder
-//////////////
+```
 
+```
 > heroku login
 > heroku create jsonserverashitech
 > git init
@@ -138,19 +133,19 @@ add assets folder
 > git add .
 > git commit -am "make it better"
 > git push heroku master
-
-```
-After Heroku server code updation
 ```
 
 #### Heroku
 
+After Heroku server code updation
+
+```
 > heroku login
 > git pull
 > git add .
 > git commit -am "added"
 > git push heroku master
-> //////////////
+```
 
 ```
 After modification in the code
@@ -165,13 +160,11 @@ and command exposed
 
 new apis added are,
 
+```
 https://jsonserverashitech.herokuapp.com/login
-
 https://jsonserverashitech.herokuapp.com/register
-
 GET-
 https://jsonserverashitech.herokuapp.com/users
-
 POST-
 https://jsonserverashitech.herokuapp.com/users
 BODY- JSON
@@ -179,14 +172,12 @@ BODY- JSON
 "email": "XYZ@XYZ.com",
 "password": ""
 }
-
 > npm install -D json-server-auth
-
 Create a db.json file with a users collection :
-
 {
 "users": []
 }
+```
 
 then register users,
 try login,
@@ -203,8 +194,9 @@ to run, if not installed -> npm install -g json-server
 now run,
 npx json-server --watch db.json
 
-#### GitHub Pages gh-pages branch~~~
+#### GitHub Pages gh-pages branch
 
+```
 1. need to add `homepage` in `package.json`
    e.g. "homepage": "link-to-your-repository"
    our case it is
@@ -220,9 +212,11 @@ npx json-server --watch db.json
    yarn run deploy
 
 this is gonna pushes your built file to `gh-pages` branch on your remote repo
+```
 
 ### CircleCI
 
+```
 create folder .circleci
 add config.yml file
 add content
@@ -236,9 +230,11 @@ docker:
   steps:
 - checkout
 - run: echo "A first hello"
+```
 
 # Git Learnings
 
+```
 git clone
 git add .
 git add \*
@@ -272,6 +268,7 @@ git branch -d BRANCH_NAME
 
 git push origin --delete BRANCH_NAME
 -- delete branch on remote
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
