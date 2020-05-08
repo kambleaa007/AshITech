@@ -19,12 +19,16 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 node [![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
+
 npm [![NPM License](https://img.shields.io/npm/l/all-contributors.svg?style=flat)](https://github.com/tterb/hyde/blob/master/LICENSE)
+
 CLI
+
 heroku CLI, account
+
 windows cmd powershell, linux terminal, mac terminal
-chrome or any browser with react redux DevTools addOns plugins
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+
+chrome or any browser with react redux DevTools addOns plugins [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
 ### Installing
 
