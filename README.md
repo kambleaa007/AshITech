@@ -1,14 +1,14 @@
 <img src="icon.png" align="right" />
 
-# Awesome README [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome#readme)
+# README [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome#readme) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/) [![कुछ भी पूछो!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama) [![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
 
 ## Live at https://kambleaa007.github.io/AshITech/index
 
-### Warning As it is Educational purposes {No TypeScript is used}
+###### Warning As it is practice purposes {TypeScript is avoided for complexity}
 
 # ReactJS
 
-Project about platform for it services and eating menu listings,
+Project about platform for it services and eating menu listings
 
 ## Getting Started
 
@@ -19,12 +19,14 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-node
-npm
+node [![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
+npm [![NPM License](https://img.shields.io/npm/l/all-contributors.svg?style=flat)](https://github.com/tterb/hyde/blob/master/LICENSE)
 CLI
 heroku CLI, account
 windows cmd powershell, linux terminal, mac terminal
 chrome or any browser with react redux DevTools addOns plugins
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+
 ```
 
 ### Installing
@@ -47,7 +49,7 @@ visit http://localhost:4200/
 ```
 
 <p align="center">
-  <img src="./img/example.png" alt="Size Limit CLI" width="738">
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/logo.png" alt="logo" width="738">
 </p>
 
 ## Running the tests
@@ -78,8 +80,6 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
-
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 

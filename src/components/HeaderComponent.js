@@ -105,10 +105,10 @@ class Header extends Component {
             <NavbarToggler onClick={this.toggleNav} />
             <NavbarBrand className="mr-auto" href="/">
               <img
-                src="assets/images/logo.png"
+                src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/Logo/logo.JPG"
                 height="30"
                 widtg="41"
-                alt="Ristorance Con Fusion"
+                alt="Completo qué `Confusióne"
               />
             </NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
