@@ -49,7 +49,7 @@ visit http://localhost:4200/
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/logo.png" alt="logo" width="738">
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/logo.png" alt="logo" height="100" width="100">
 </p>
 
 ## Running the tests
