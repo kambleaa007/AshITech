@@ -50,6 +50,11 @@ visit http://localhost:4200/
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/logo.png" alt="logo" height="100" width="100">
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/1.JPG" alt="logo" height="300" width="600">
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/2.JPG" alt="logo" height="300" width="600">
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/3.JPG" alt="logo" height="300" width="600">
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/4.JPG" alt="logo" height="300" width="600">
+  <img src="https://raw.githubusercontent.com/kambleaa007/AshITech/master/json-server/assets/images/screenshots/5.JPG" alt="logo" height="300" width="600">
 </p>
 
 ## Running the tests
