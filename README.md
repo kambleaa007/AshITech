@@ -2,7 +2,7 @@
 
 # README [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome#readme) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/) [![कुछ भी पूछो!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama) [![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
 
-## Live at https://kambleaa007.github.io/AshITech/index
+## :point_right: Live at https://kambleaa007.github.io/AshITech/index
 
 ###### Warning As it is practice purposes {TypeScript is avoided for complexity}
 
@@ -22,9 +22,7 @@ node [![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
 
 npm [![NPM License](https://img.shields.io/npm/l/all-contributors.svg?style=flat)](https://github.com/tterb/hyde/blob/master/LICENSE)
 
-CLI
-
-heroku CLI, account
+heroku CLI, account [![Node](https://img.shields.io/badge/node-%3E%3D%206.0.0-brightgreen)](https://img.shields.io/badge/node-%3E%3D%206.0.0-brightgreen)
 
 windows cmd powershell, linux terminal, mac terminal [![Platforms](https://img.shields.io/badge/platform-linux--64%20%7C%20win--32%20%7C%20osx--64%20%7C%20win--64-lightgrey)](https://img.shields.io/badge/platform-linux--64%20%7C%20win--32%20%7C%20osx--64%20%7C%20win--64-lightgrey)
 
@@ -80,6 +78,7 @@ circle CI pipelines
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/kambleaa007/AshITech/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+[![stackoverflow](https://img.shields.io/badge/stackoverflow%20reputation-1100-yellow)](https://img.shields.io/badge/stackoverflow%20reputation-1100-yellow)
 
 ## Versioning
 
