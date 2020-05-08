@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+:writing_hand: What things you need to install the software and how to install them
 
 node [![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
 
@@ -30,7 +30,7 @@ chrome or any browser with react redux DevTools addOns plugins [![Open Source](h
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+:writing_hand: A step by step series of examples that tell you how to get a development env running
 
 Say what the step will be
 
@@ -62,6 +62,7 @@ jest karma jasmin
 
 ## Deployment
 
+:writing_hand:
 How to deploy this on a live system
 use github pages gh-pages
 npm run deploy
@@ -98,6 +99,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 - Inspiration
 - etc
 
+:pencil2:
+
 ```
 git clone https://github.com/kambleaa007/AshITech.git
 npm i
@@ -107,6 +110,7 @@ Just That Only
 
 #This is Git Clone AshITech Repo
 
+:pencil2:
 You might need GitCloneJsonServer Repo
 
 NOW Backend is at json-server folder
@@ -118,6 +122,8 @@ doTest\json-server>json-server --watch db.json -d 2000 -p 3001
 ```
 
 #### Heroku learnings work
+
+:pencil2:
 
 ```
 open git check for json-server-heroku
@@ -140,6 +146,7 @@ add assets folder
 
 #### Heroku
 
+:pencil2:
 After Heroku server code updation
 
 ```
@@ -161,6 +168,7 @@ and command exposed
 
 #### Now use json server auth
 
+:pencil2:
 new apis added are,
 
 ```
@@ -199,6 +207,8 @@ npx json-server --watch db.json
 
 #### GitHub Pages gh-pages branch
 
+:pencil2:
+
 ```
 1. need to add `homepage` in `package.json`
    e.g. "homepage": "link-to-your-repository"
@@ -219,6 +229,8 @@ this is gonna pushes your built file to `gh-pages` branch on your remote repo
 
 ### CircleCI
 
+:pencil2:
+
 ```
 create folder .circleci
 add config.yml file
@@ -236,6 +248,8 @@ docker:
 ```
 
 # Git Learnings
+
+:pencil2:
 
 ```
 git clone
