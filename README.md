@@ -58,6 +58,12 @@ visit http://localhost:4200/
 
 ### Babel Webpack
 
+I kept my project under `create-react-app`, so underhood alot things going on of `babel` transcompiler, `webpack`,
+For that just do command `EJECT`,
+then, you will get babel, webpack stuff,
+but its one way journey, you cant get back to `create-react-app`,
+coming soon...
+
 ## Running the tests
 
 jest karma jasmin
@@ -157,6 +163,8 @@ After Heroku server code updation
 > git add .
 > git commit -am "added"
 > git push heroku master
+
+if error > git pull heroku master
 ```
 
 ```

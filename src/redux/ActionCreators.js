@@ -366,14 +366,21 @@ export const postLogin = (userName, passWord) => (dispatch) => {
 
   const newLogin = {
     email: userName,
-    passWord: passWord,
+    password: passWord,
   };
 
-  return fetch(baseUrl + "login", {
+  return fetch("https://jsonserverashitech.herokuapp.com/login", {
     method: "POST",
+    //mode: "cors",
     body: JSON.stringify(newLogin),
     headers: {
       "Content-Type": "application/json",
+      // "Access-Control-Allow-Origin": "http://localhost:3000/home",
+      // "Access-Control-Allow-Credentials": "true",
+      // "Access-Control-Allow-Methods": "GET,POST,PUT",
+
+      // "Access-Control-Allow-Headers":
+      //   "x-csrf-token,authorization,content-type,accept,origin,x-requested-with,access-control-allow-origin",
     },
     credentials: "same-origin",
   })
