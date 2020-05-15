@@ -22,6 +22,7 @@ import { postLogin, fetchLogin } from "./../redux/ActionCreators";
 import { connect } from "react-redux";
 import { LOGIN_SUCCESS } from "../redux/actionTypes";
 import { Loading } from "./LoadingComponent";
+import LoginHook from "./hook/LoginHook";
 
 const mapStateToProps = (state) => {
   return {
@@ -47,6 +48,8 @@ class Header extends Component {
       isNavOpen: false,
       isModalOpen: false,
       loginMsg: "Not Logged In",
+      userName: "",
+      passWord: "",
     };
 
     this.toggleNav = this.toggleNav.bind(this);
@@ -56,7 +59,7 @@ class Header extends Component {
 
   componentDidMount() {
     this.props.fetchLogin();
-
+    //successMess  errMess
     if (this.props.login.successMess != null) {
       localStorage.setItem("token", this.props.login.successMess);
       alert(localStorage.getItem("token"));
@@ -71,10 +74,15 @@ class Header extends Component {
     this.setState({ isModalOpen: !this.state.isModalOpen });
   }
 
-  handleLogin(evt) {
-    this.toggleModal();
+  async handleLogin(evt) {
+    //this.toggleModal();
 
-    //this.props.postLogin(this.username.value, this.password.value);
+    this.setState({
+      userName: this.username.value,
+      passWord: this.password.value,
+    });
+
+    this.props.postLogin(this.username.value, this.password.value);
 
     //let isLogin = false;
 
@@ -84,15 +92,15 @@ class Header extends Component {
     // )[0];
     // this.setState({ loginMsg: l });
 
-    alert(
-      this.username.value +
-        " " +
-        this.password.value +
-        " sucess: " +
-        this.props.login.isLoading +
-        " fail: " +
-        this.props.login.errMess
-    );
+    // alert(
+    //   this.username.value +
+    //     " " +
+    //     this.password.value +
+    //     " sucess: " +
+    //     this.props.login.isLoading +
+    //     " fail: " +
+    //     this.props.login.errMess
+    // );
 
     evt.preventDefault();
   }
@@ -192,7 +200,6 @@ class Header extends Component {
                     innerRef={(input) => (this.username = input)}
                   />
                 </FormGroup>
-
                 <FormGroup>
                   <Label htmlFor="password">Password</Label>
                   <Input
@@ -202,7 +209,6 @@ class Header extends Component {
                     innerRef={(input) => (this.password = input)}
                   />
                 </FormGroup>
-
                 <FormGroup check>
                   <Label check>
                     <Input
@@ -216,6 +222,8 @@ class Header extends Component {
                 <Button type="submit" value="submit" color="primary">
                   Login
                 </Button>
+                errMess: {this.props.login.errMess}
+                successMess: {this.props.login.successMess}
                 {this.props.login.errMess != null && (
                   <p key="1">Error Message{this.props.login.errMess}</p>
                 )}
@@ -223,6 +231,8 @@ class Header extends Component {
                   <p key="2">Success Message{this.props.login.successMess}</p>
                 )}
                 {this.props.loginMsg && <p key="3">{this.props.loginMsg}</p>}
+                UN: {this.state.userName}
+                PW: {this.state.passWord}
               </Form>
             )}
           </ModalBody>

@@ -365,11 +365,11 @@ export const postLogin = (userName, passWord) => (dispatch) => {
   dispatch(loginLoading);
 
   const newLogin = {
-    userName: userName,
+    email: userName,
     passWord: passWord,
   };
 
-  return fetch(baseUrl + "login/", {
+  return fetch(baseUrl + "login", {
     method: "POST",
     body: JSON.stringify(newLogin),
     headers: {
@@ -396,7 +396,7 @@ export const postLogin = (userName, passWord) => (dispatch) => {
       }
     )
     .then((response) => response.json())
-    .then((response) => dispatch(loginSuccess(response.access_token)))
+    .then((response) => dispatch(loginSuccess(response)))
     .catch((error) => dispatch(loginFailed(error.message)));
 };
 
