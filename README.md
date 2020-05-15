@@ -58,11 +58,10 @@ visit http://localhost:4200/
 
 ### Babel Webpack
 
-I kept my project under `create-react-app`, so underhood alot things going on of `babel` transcompiler, `webpack`,
-For that just do command `EJECT`,
-then, you will get babel, webpack stuff,
-but its one way journey, you cant get back to `create-react-app`,
-coming soon...
+- I kept my project under `create-react-app`, so underhood alot things going on of `babel` transcompiler, `webpack`,
+- For that just do command `EJECT`, then, you will get babel, webpack stuff,
+- but its one way journey, you cant get back to `create-react-app`,
+- coming soon...
 
 ## Running the tests
 
