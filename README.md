@@ -18,15 +18,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 :writing_hand: What things you need to install the software and how to install them
 
-node [![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
+node  
+[![Node](https://img.shields.io/badge/node-%3E%3D%206.0.0-brightgreen)](https://img.shields.io/badge/node-%3E%3D%206.0.0-brightgreen)
 
-npm [![NPM License](https://img.shields.io/npm/l/all-contributors.svg?style=flat)](https://github.com/tterb/hyde/blob/master/LICENSE)
+npm  
+[![NPM Version](https://img.shields.io/npm/v/npm.svg?style=flat)]()
 
-heroku CLI, account [![Node](https://img.shields.io/badge/node-%3E%3D%206.0.0-brightgreen)](https://img.shields.io/badge/node-%3E%3D%206.0.0-brightgreen)
+heroku CLI, account and installed cli
 
 windows cmd powershell, linux terminal, mac terminal [![Platforms](https://img.shields.io/badge/platform-linux--64%20%7C%20win--32%20%7C%20osx--64%20%7C%20win--64-lightgrey)](https://img.shields.io/badge/platform-linux--64%20%7C%20win--32%20%7C%20osx--64%20%7C%20win--64-lightgrey)
 
-chrome or any browser with react redux DevTools addOns plugins [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+chrome or any browser with react redux DevTools addOns plugins [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/) [![NPM License](https://img.shields.io/npm/l/all-contributors.svg?style=flat)](https://github.com/tterb/hyde/blob/master/LICENSE)
 
 ### Installing
 
