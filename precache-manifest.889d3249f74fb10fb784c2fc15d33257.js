@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6261d03c748051d379ca752080b1d7f5",
+    "revision": "e8a1742f1775e06044e379ba7f0bcc23",
     "url": "/AshITech/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AshITech/static/css/2.66f801d2.chunk.css"
   },
   {
-    "revision": "c98192f8f0b89c006aa2",
+    "revision": "56d0cde85a8e5f58714b",
     "url": "/AshITech/static/css/main.111dfa07.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AshITech/static/js/2.55662a9d.chunk.js"
   },
   {
-    "revision": "c98192f8f0b89c006aa2",
-    "url": "/AshITech/static/js/main.26061a04.chunk.js"
+    "revision": "56d0cde85a8e5f58714b",
+    "url": "/AshITech/static/js/main.df4feb7c.chunk.js"
   },
   {
     "revision": "be648eb826a9cc224c44",
